@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+.header__container-iconos{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+
+.header__container-menu{
+    display: none;
+}
+
+.header__container-hamburguesa{
+    color:white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+.main{
+    background: black; 
+    padding: 24px 24px; 
+}
+
+.main__container-textos{
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_textos-titulo{
+    font-size: 65px;
+    text-align: center;
+}
