@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 25px;
+}
+
 .header{
     background: black;
     display: flex;
@@ -29,6 +33,12 @@
 
 .main{
     background: black; 
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container-izquierdo{
     padding: 24px 24px; 
 }
 
@@ -68,4 +78,8 @@
 
 .main__elementos-boton:hover{
     background: gray;
+}
+
+.main__derecho-img{
+    width: 100%;
 }
