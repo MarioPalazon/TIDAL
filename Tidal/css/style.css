@@ -450,6 +450,7 @@ img{
     background: black;
     position:relative;
     width: 100%;
+    
 }
 
 .gama__container{
@@ -490,6 +491,7 @@ img{
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 24px;
+    font-weight: bold;
 }
 
 .gama__decription-calidad{
@@ -510,4 +512,18 @@ img{
     font-size: 1rem;
     line-height: 10px;
 
+}
+
+.gama__detalle{
+    padding: 15px 0;
+    
+}
+.gama__detalle-text{
+    font-family: "Poppins", sans-serif;
+    color:white;
+    position: absolute;
+    top:70%;
+    font-size: 18px;
+    margin: 0 8px 10px 8px;
+    
 }
