@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 10%;
+}
 
 /*HEADER*/
 .header{
@@ -29,55 +32,54 @@
     margin-left: 12px;
 }
 
-/*MAIN*/
-
 .main{
-    background: black; 
-   
-    display: flex;
-    flex-direction: column;
-}
-
-.main__container-izquierdo{
-    padding: 24px 24px; 
-}
-
-.main__container-elementos{
+    background: black;
     color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.main__elementos-titulo{
-    font-size: 65px;
+.main__container-izquierdo{
     text-align: center;
+    padding: 0 24px;
 }
 
-.main__elementos-descripcion{
-    text-align: center;
+.main__izquierdo-titulo{
+    font-family: "Poppins",sans-serif;
+    line-height: 75px;
+    margin-top: 45px;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.main__izquierdo-descripcion{
+    font-family: "Poppins",sans-serif;
     margin: 12px 0 24px 0;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
 }
 
-.main__elementos-boton{
-    text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    color:black;
-    background:#FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
+.main__izquierdo-boton{    
     width: 100%;
-    border:1px solid transparent;
-    border-radius: 6px;
-    padding: 15px;
-    transition: 0.7s all;
+    background: white;
+    padding: 10px 48px;
+    border-radius: 10px;
 }
 
 .main__elementos-boton:hover{
     background: gray;
+}
+
+.main__boton{
+    font-family: "Poppins",sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.main__container-derecho{
+    width: 100%;
 }
 
 .main__derecho-img{
@@ -97,6 +99,7 @@
     width: 100%;
     height: 107vh;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     gap: 10px;
     scroll-snap-type: x mandatory; /*De esta forma evitaremos que nuestro carrusel se quede en mitad de dos imágenes.*/
     padding: 0 23px;
@@ -439,4 +442,72 @@
     font-weight: 300;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
+}
+/*CARRUSEL*/
+
+
+.gama{
+    background: black;
+    position:relative;
+    width: 100%;
+}
+
+.gama__container{
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gama__info-fondo{
+    width: 100%;
+    margin-top: 25%;
+}
+
+.gama__info-title{
+    
+}
+
+.gama__title{
+    color: white;
+    position: absolute;
+    top: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.gama__decription{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top:60%;
+    padding: 0 12px 0 0;
+}
+
+.gama__decription-title{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.gama__decription-calidad{
+    font-family: "Poppins", sans-serif;
+    color:white;
+    padding: 0.2515rem 0.6707rem;
+    background-color: #332619;
+    color: #ffbe7d;
+    border-radius: 0.66rem;
+    font-size: .75rem;
+    margin: 6px 0px 8px 8px;
+}
+
+.gama__decription-description{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 0 0 0 8px;
+    font-size: 1rem;
+    line-height: 10px;
+
 }
