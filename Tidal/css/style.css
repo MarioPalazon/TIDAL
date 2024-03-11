@@ -852,7 +852,7 @@ img{
     grid-template-columns: repeat(20, 50%);
     gap: 10px;
     width: 100%;
-    height: 200px;
+    height: 162px;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory; /*De esta forma evitaremos que nuestro carrusel se quede en mitad de dos imágenes.*/
@@ -864,3 +864,45 @@ img{
     width: 100%;    
     scroll-snap-align: center;
 } 
+
+.faq{
+    background: #141417;
+    color: white;
+    padding: 48px 24px;
+}
+
+.faq__text{
+    padding: 72px 0;
+}
+
+.faq__text-title{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 48px;
+}
+
+.faq__container-tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.faq__tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.faq__tarjeta-title{
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 16px;
+}
+
+.faq__tarjeta-subtitle{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
