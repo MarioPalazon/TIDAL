@@ -509,11 +509,11 @@ svg{
 
 .gama__decription-title1::after{
     content: "Max";
-    padding: 0.2515rem 0.6707rem;
+    padding: 5px 8px;
     background-color: #332619;
     color: #ffbe7d;
-    border-radius: 0.66rem;
-    font-size: .75rem;
+    border-radius: 8px;
+    font-size: 12px;
     margin: 6px 0px 8px 8px;
     text-align: center;
 }
@@ -522,7 +522,7 @@ svg{
     color: white;
     font-family: "Poppins", sans-serif;
     margin: 0 0 0 8px;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 10px;
     padding: 10px 0 20px;
 }
@@ -545,7 +545,7 @@ svg{
     color: white;
     font-family: "Poppins", sans-serif;
     margin: 0 0 0 8px;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 10px;
 }
 
@@ -559,11 +559,11 @@ svg{
 
 .gama__decription-title2::after{
     content: "Alta";
-    padding: 0.2515rem 0.6707rem;
+    padding: 5px 8px;
     background-color: #07332f;
     color: #21feec;
-    border-radius: 0.66rem;
-    font-size: .75rem;
+    border-radius: 8px;
+    font-size: 12px;
     margin: 6px 0px 8px 8px;
     text-align: center;
 }
@@ -571,10 +571,10 @@ svg{
 
 .gama__decription-title3::after{
     content: "Baja";
-    padding: 0.2515rem 0.6707rem;
+    padding: 5px 8px;
     background-color: #393940;
-    border-radius: 0.66rem;
-    font-size: .75rem;
+    border-radius: 8px;
+    font-size: 12px;
     margin: 6px 0px 8px 8px;
     text-align: center;
 }
