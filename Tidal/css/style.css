@@ -995,3 +995,43 @@ svg{
 .imagen__pc-caja-link a:visited{
     color:aqua;
 }
+
+.redes__sociales{
+    background: black;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column-reverse;    
+   
+}
+
+.redes__sociales-iconos{
+    color: gray;
+    margin-bottom: 24px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes__sociales-iconos a i:hover{
+    transition: 1s all;
+    color: white;
+    cursor: pointer;
+}
+
+.redes__sociales-iconos a:visited{
+    color: grey;
+}
+
+.redes__sociales-iconos a:active{
+    color: grey;
+}
+
+.redes__sociales-texto{
+    padding: 0 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.sociales__texto-descripcion{
+    color:grey;
+    font-size: 12px;
+}
