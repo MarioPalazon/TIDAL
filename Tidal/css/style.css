@@ -1126,6 +1126,34 @@ svg{
 @media(min-width:768px){
    .main{
         flex-direction: row;
+        justify-content: left;
+        position: relative;
+        text-align: left;
    } 
 
+   .main__container-izquierdo{
+        display: flex;
+        flex-direction: column;   
+        padding-left: 48px;     
+        z-index: 10;
+        width: 60%;
+   }
+
+   .main__izquierdo-titulo{
+        font-size: 65px;
+        text-align: left;
+        line-height: 90px;
+        width: 60%;
+   }
+
+   .main__container-derecho{
+        position: absolute;
+        top:0;
+        right:0px;
+        width: 50%;
+   }
+   
+   .main__izquierdo-boton{
+        width: 78%;
+   }
 }
