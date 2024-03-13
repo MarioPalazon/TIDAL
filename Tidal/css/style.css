@@ -604,6 +604,10 @@ svg{
     padding: 0 23px;
 }
 
+.cards__container-link-carrusel{
+    display: none;
+}
+
 .carrusel_dos{
     scroll-snap-align: center;
 }
@@ -657,10 +661,18 @@ svg{
     align-items: center;
     justify-content: center;
 }
+.cards__text-img-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-.text__img{
+.text__img,
+.text__img-1{
     width: 60%;
 }
+
 
 .text__img-especial{
     width: 20%;
@@ -1065,6 +1077,7 @@ svg{
 }
 
 .redes__sociales-texto{
+    margin-bottom: 24px;
     padding: 0 10px;
     font-family: "Poppins", sans-serif;
 }
@@ -1271,15 +1284,77 @@ svg{
     margin-bottom: 0;
 }
 
+    .cards__text-img{
+        display: none;
+    }
 
+    .text__img-1{
+        width: 20%;
+    }
 
+    .carrusel__tercero{
+        
+        height: 350px;
+    }
 
+    .cards__container-link-carrusel{
+        padding: 0 48px 0 48px;
+        display: flex;
 
+    }
 
+    .degrade__text-title{
+        font-size: 50px;
+    }
 
+    .degrade__text{
+        width: 100%;
+        flex-direction: row;
+    }
 
+    .degrade__caja-azul,
+    .degrade__caja-naranja{
+        margin-right: 20px;
+        margin-left: 25px;
+        border-radius: 25px;
+        width: 50%;
+    }
+
+    .caja__azul-subtitle,
+    .caja__naranja-subtitle{
+        font-weight: bolder;
+    }
+
+    .degrade__caja-azul-valores{
+        margin-top: 65px;
+    }
+
+    .faq__container-tarjeta{
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .faq__tarjeta{
+        width: 30%;
+    }
+
+    .listado{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .listado__container{
+        width: 50%;
+    }
 
    .redes__sociales-iconos {
-    width: 40%;
+        width: 40%;
    }
+    .footer_izquierdo-icono svg{
+        width: 5%;
+    }
+   
 }
