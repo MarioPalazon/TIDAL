@@ -1156,7 +1156,9 @@ svg{
     margin-left: 10px;
     color:#808080;
 }
+/*FIN MEDIDAS DEL MOBILE*/
 
+/*INICIO MEDIDAS DEL  TABLET*/
 @media(min-width:768px){
    .main{
         flex-direction: row;
