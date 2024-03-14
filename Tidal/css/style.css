@@ -1358,6 +1358,13 @@ svg{
         flex-wrap: wrap;
     }
 
+    .contenedor_prefooter-izquierdo{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
     .listado__container{
         width: 50%;
     }
