@@ -171,17 +171,29 @@ svg{
     font-family: "Poppins", sans-serif;
 }
 
-.carrusel_link_1,
-.carrusel_link_2,
-.carrusel_link_4,
-.carrusel_link_5,
-.carrusel_link_6{
+.carrusel_link_1 a,
+.carrusel_link_2 a,
+.carrusel_link_4 a,
+.carrusel_link_5 a,
+.carrusel_link_6 a{
     position: absolute;
     bottom: 40px;
     color: #FFFFFF;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.carrusel_link_1 a::before,
+.carrusel_link_2 a::before,
+.carrusel_link_4 a::before,
+.carrusel_link_5 a::before,
+.carrusel_link_6 a::before{
+    content: url(../img/icons8-chebrón-hacia-la-derecha-20.png);
+    align-items: center;
 }
 
 /*TARJETA 2*/
@@ -1369,6 +1381,11 @@ svg{
         width: 100%;
     }
 
+    .header__titulo {
+        font-size: 25px;
+        font-family: "Poppins", sans-serif;
+    }
+
     .header__container-iconos{
         width: 50%;
         margin-left: 40px;
@@ -1420,45 +1437,68 @@ svg{
         background: #c1c1c1;
     }
 
+    .main{
+        padding-bottom: 90px;
+    }
+
     .main__container-izquierdo{
         text-align: left;
         width: 70%;
-        padding-left: 100px;
-        padding-top: 100px;
+        padding-left: 60px;
+        padding-top: 80px;
+        margin-left: 60px;
     }
 
     .main__izquierdo-titulo{
         width: 70%;
         font-size: 110px;
-        line-height: 120px;
+        line-height: 125px;
+        letter-spacing: 4px;
     }
 
     .main__izquierdo-descripcion{
-        padding: 20px 0;
-        font-size: 18px;
+        padding: 17px 0;
+        font-size: 17px;
     }
 
     .main__izquierdo-boton{
         width: 25%;
+        display: flex;
+        justify-content: center;
     }
 
-    .article_carrusel{
-        
+    .main__container-derecho{
+        width: 57%;
     }
 
     .container_carrusel {
         grid-template-columns: repeat(8, 31%);
         grid-template-rows: 100%;
-        margin-left: 80px;
         height: 100vh;
+        overflow: hidden;
+        padding-top: 60px;
+        margin-top: 60px;
+        scroll-snap-type: x mandatory;
     }
 
     .carrusel_texto_1 {
         height: 45%;
     }
 
-    .carrusel_link_1, .carrusel_link_2, .carrusel_link_4, .carrusel_link_5, .carrusel_link_6 {
-        bottom: 60px;
+    .carrusel_link_1 a, .carrusel_link_2 a, .carrusel_link_4 a, .carrusel_link_6 a{
+        display: flex;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .carrusel_link_1 a::before,
+    .carrusel_link_2 a::before,
+    .carrusel_link_4 a::before,
+    .carrusel_link_5 a::before,
+    .carrusel_link_6 a::before{
+        content: url(../img/icons8-chebrón-hacia-la-derecha-20.png);
+        align-items: center;
     }
 
     .img_carrusel_1{
@@ -1500,6 +1540,7 @@ svg{
 
     .carrusel__segundo{
         height: 35%;
+        overflow: hidden;
     }
 
     .cards__text-img{
@@ -1510,5 +1551,78 @@ svg{
         overflow: hidden;
     }
 
+    .degrade__text-title {
+        font-size: 50px;
+        padding-top: 40px;
+        margin-top: 70px;
+    }
+
+    .degrade__text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .degrade__caja-azul, .degrade__caja-naranja {
+        margin-right: 20px;
+        margin-left: 25px;
+        border-radius: 25px;
+        width: 30%;
+    }
+
+    .carrusel_pequeño-tarjeta{
+        overflow: hidden;
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq__container-tarjeta {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .faq__tarjeta {
+        width: 25%;
+    }
+
+    /*prefooter*/
+
+    .section_prefooter{
+        width: 100%;
+        background-color: #000;
+    }
+    .listado {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor_prefooter-izquierdo{
+        display: flex;
+        width: 65%;
+    }
+
+    .listado__imagen {
+        width: 30%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen__pc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen__pc svg {
+        width: 100%;
+    }
 }
 /*FIN MEDIDAS DEL  LAPTOP*/
