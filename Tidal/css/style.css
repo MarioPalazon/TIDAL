@@ -1356,5 +1356,159 @@ svg{
     .footer_izquierdo-icono svg{
         width: 5%;
     }
-   
 }
+
+/*FIN MEDIDAS DEL  TABLET*/
+
+/*INICIO MEDIDAS DEL  LAPTOP*/
+@media(min-width:1024px){
+    .header__container-hamburguesa{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+
+    .header__container-iconos{
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .header__container-iconos svg{
+        width: 5%;
+    }
+
+    .header__container-menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        z-index: 10;
+        margin-top: 20px;
+    }
+
+    .header__container-menu button{
+        font-family: "Poppins", sans-serif;
+        background: transparent;
+        color:white;
+        font-size: 18px;
+        font-weight: bolder;
+        border-radius: 5px;
+        transition:  0.5s all;
+        padding: 8px 13px;
+       
+    }
+
+    .header__container-menu button:hover{
+        cursor: pointer;
+        background: #696969;
+    }
+
+    .header__container-menu a{
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color:black;
+        background-color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-weight: bolder;
+        transition:  0.8s all;
+    }
+
+    .header__container-menu a:hover{
+        cursor: pointer;
+        background: #c1c1c1;
+    }
+
+    .main__container-izquierdo{
+        text-align: left;
+        width: 70%;
+        padding-left: 100px;
+        padding-top: 100px;
+    }
+
+    .main__izquierdo-titulo{
+        width: 70%;
+        font-size: 110px;
+        line-height: 120px;
+    }
+
+    .main__izquierdo-descripcion{
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .main__izquierdo-boton{
+        width: 25%;
+    }
+
+    .article_carrusel{
+        
+    }
+
+    .container_carrusel {
+        grid-template-columns: repeat(8, 31%);
+        grid-template-rows: 100%;
+        margin-left: 80px;
+        height: 100vh;
+    }
+
+    .carrusel_texto_1 {
+        height: 45%;
+    }
+
+    .carrusel_link_1, .carrusel_link_2, .carrusel_link_4, .carrusel_link_5, .carrusel_link_6 {
+        bottom: 60px;
+    }
+
+    .img_carrusel_1{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .container__titulo-gama{
+        width: 70%;
+    }
+
+    .section__gama {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .article__contenedor-gama {
+        width: 90%;
+        display: flex;
+    
+    }
+
+    .carrusel__segundo {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+    }
+
+    .gama__title{
+        margin-top: 50px;
+        font-size: 50px;
+    }
+
+    .contenedor__gama{
+        padding: 80px 0;
+        margin-bottom: 80px;
+    }
+
+    .carrusel__segundo{
+        height: 35%;
+    }
+
+    .cards__text-img{
+        display: none;
+    }
+    
+    .carrusel__tercero{        
+        overflow: hidden;
+    }
+
+}
+/*FIN MEDIDAS DEL  LAPTOP*/
