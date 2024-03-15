@@ -13,19 +13,20 @@
     <title>Tidal</title>
 </head>
 <body>
+    <!--HEADER-->
     <header class="header">
-        <div class="header__container-iconos">
+        <div class="header__container-left">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff"focusable="false"><path d="M12 5.6L8.3 9.3 4.6 5.6 0.9 9.3 4.6 13 8.3 9.3 12 13 8.3 16.7 12 20.4 15.7 16.7 12 13 15.7 9.3 12 5.6z"></path><path d="M16.8 6.7H22V11.9H16.8z" transform="rotate(-45 19.4 9.3)"></path></svg>            
-            <h3 class="header__titulo">TIDAL</h2>
+            <h3 class="header__left-title">TIDAL</h2>
         </div>
-        <div class="header__container-menu">
+        <div class="header__container-center">
             <button>
                 Sobre TIDAL
             </button>
             <button>
                 Ayuda
             </button>
-            <button >
+            <button>
                 <i class="bi bi-person"></i> Iniciar sesion
             </button>   
             <a href="#">Prueba gratis</a>
@@ -34,136 +35,143 @@
             <i class="bi bi-list"></i>
         </div>
     </header>
+    <!--HEADER-->
+
     <!--MAIN-->
     <main class="main">
-        <div class="main__container-izquierdo">
-            <h1 class="main__izquierdo-titulo">LIVE: donde esta la accion</h1>
-            <p class="main__izquierdo-descripcion">Disfruta de la musica compartida en tiempo real</p>
-            <div class="main__izquierdo-boton">
-                <a href="#" class="main__boton">Prueba gratis</a>
+        <div class="main__container-left">
+            <h1 class="main__left-title">LIVE: donde esta la accion</h1>
+            <p class="main__left-description">Disfruta de la musica compartida en tiempo real</p>
+            <div class="main__container-btn">
+                <a href="https://login.tidal.com/authorize?client_id=bakYq0nMtpuRYDtM&flowInitiator=TIDAL&redirect_uri=https%3A%2F%2Foffer.tidal.com%2Flogin%2Ftidal%2Freturn&response_type=code&state=39af9a73-8e9e-40bf-8ef1-dce0b90ec77d&geo=CL&campaignId=default" class="main__btn-link">Prueba gratis</a>
             </div>
         </div>
-        <div class="main__container-derecho">
-            <img class="main__derecho-img" alt="img_main" src="./img/img_main_6.png" />
+        <div class="main__container-img">
+            <img class="main__img" alt="imagen main" src="./img/img_main_6.png" />
        </div>
     </main>
-    <!--CARRUSEL GRANDE 1-->
-    <section>
-        <article class="article_carrusel">
-            <div class="container_carrusel">
-                <div class="carrusel_tarjeta_1">
-                    <img class="img_carrusel_1" src="./img/img_carrusel_1.jpg">
-                    <div class="carrusel_texto_1">
-                        <h2 class="carrusel_titulo_1">El nuevo programa TIDAL RISING</h2>
-                        <p class="carrusel_descripcion_1">Descubre la próxima ola de nuevos artistas de TIDAL RISING de todo el mundo a través de una variedad de géneros.<p>
-                        <div class="carrusel_link_1">
+    <!--MAIN-->
+
+    <!--FIRST CARRUSEL 1-->
+    <section class="section__first-carrusel">
+        <article class="first__carrusel">
+            <div class="first__carrusel-container-cards">
+                <div class="first__carrusel-cards-1">
+                    <img class="first__cards-1-img" src="./img/img_carrusel_1.jpg">
+                    <div class="first__cards-1-texts">
+                        <h2 class="first__cards-1-title">El nuevo programa TIDAL RISING</h2>
+                        <p class="first__cards-1-description">Descubre la próxima ola de nuevos artistas de TIDAL RISING de todo el mundo a través de una variedad de géneros.<p>
+                        <div class="first__cards-1-link">
                             <a href="#">Aprender más</a>
-                        </div>div>
-                            
+                        </div>div>                            
                     </div>
                 </div>
-                <div class="carrusel_tarjeta_2">
-                    <img class="img_carrusel_2" src="./img/img_carrusel_2.png">
-                    <div class="carrusel_texto_2">
-                        <h2 class="carrusel_titulo_2">Live en TIDAL</h2>
-                        <p class="carrusel_descripcion_2">Escucha o reproduce y comparte tus canciones y playlists favoritas en tiempo real con tus amigos, familiares u otros fans gracias a LIVE.<p>
-                        <div class="carrusel_link_2">
+                <div class="first__carrusel-cards-2">
+                    <img class="first__cards-2-img" src="./img/img_carrusel_2.png">
+                    <div class="first__cards-2-texts">
+                        <h2 class="first__cards-2-title">Live en TIDAL</h2>
+                        <p class="first__cards-2-description">Escucha o reproduce y comparte tus canciones y playlists favoritas en tiempo real con tus amigos, familiares u otros fans gracias a LIVE.<p>
+                        <div class="first__cards-2-link">
                             <a href="#">Aprender más</a>
                         </div>div>
                     </div>
                 </div>
                 <div class="carrusel_tarjeta_3">
-                    <img class="img_carrusel_2" src="./img/img_carrusel_3.png">
-                    <div class="carrusel_texto_3">
-                        <h2 class="carrusel_titulo_3">Más de 100 millones de canciones. Sin anuncios.</h2>
-                        <p class="carrusel_descripcion_3">Con más de 100 millones de canciones, lanzamientos exclusivos y muchísimas entrevistas y videos musicales, TIDAL te acerca a los artistas que escuchas. Sin publicidad.<p>
+                    <img class="first__cards-3-img" src="./img/img_carrusel_3.png">
+                    <div class="first__cards-3-texts">
+                        <h2 class="first__cards-3-title">Más de 100 millones de canciones. Sin anuncios.</h2>
+                        <p class="first__cards-3-description">Con más de 100 millones de canciones, lanzamientos exclusivos y muchísimas entrevistas y videos musicales, TIDAL te acerca a los artistas que escuchas. Sin publicidad.<p>
                     </div>
                 </div>
                 <div class="carrusel_tarjeta_4">
-                    <img class="img_carrusel_2" src="./img/img_carrusel_4.png">
-                    <div class="carrusel_texto_4">
-                        <h2 class="carrusel_titulo_4">Escucha más y mejor tu música favorita.</h2>
-                        <p class="carrusel_descripcion_4">Experimenta el mejor sonido de su clase con HiRes FLAC, 100 millones de canciones en calidad de estudio con FLAC o deja que el sonido te envuelva con Dolby Atmos y Sony 360 Reality Audio.<p>
-                        <div class="carrusel_link_4">
+                    <img class="first__cards-4-img" src="./img/img_carrusel_4.png">
+                    <div class="first__cards-4-texts">
+                        <h2 class="first__cards-4-title">Escucha más y mejor tu música favorita.</h2>
+                        <p class="first__cards-4-description">Experimenta el mejor sonido de su clase con HiRes FLAC, 100 millones de canciones en calidad de estudio con FLAC o deja que el sonido te envuelva con Dolby Atmos y Sony 360 Reality Audio.<p>
+                        <div class="first__cards-4-link">
                             <a href="#">Aprender más</a>
                         </div>div>
                     </div>
                 </div>
                 <div class="carrusel_tarjeta_5">
-                    <img class="img_carrusel_5" src="./img/img_carrusel_5.png">
-                    <div class="carrusel_texto_5">
-                        <h2 class="carrusel_titulo_5">Cuando sea. Donde sea.</h2>
-                        <p class="carrusel_descripcion_5">Escuche cuando sea en cualquier dispositivo, aunque esté sin conexión, en casa o en el automóvil.<p>
-                        <div class="carrusel_link_5">
+                    <img class="first__cards-5-img" src="./img/img_carrusel_5.png">
+                    <div class="first__cards-5-texts">
+                        <h2 class="first__cards-5-title">Cuando sea. Donde sea.</h2>
+                        <p class="first__cards-5-description">Escuche cuando sea en cualquier dispositivo, aunque esté sin conexión, en casa o en el automóvil.<p>
+                        <div class="first__cards-5-link">
                             <a href="#">Ver nuestros dispositivos compatibless</a>
                         </div>div>
                     </div>
                 </div>
                 <div class="carrusel_tarjeta_6">
-                    <img class="img_carrusel_2" src="./img/img_carrusel_6.png">
-                    <div class="carrusel_texto_6">
-                        <h2 class="carrusel_titulo_6">Mixes y Radio.</h2>
-                        <p class="carrusel_descripcion_6">Consigue una selección personalizada de canciones y vídeos con My Mix, o descubre nueva música con Artist Radio.<p>
-                        <div class="carrusel_link_6">
+                    <img class="first__cards-6-img" src="./img/img_carrusel_6.png">
+                    <div class="first__cards-6-texts">
+                        <h2 class="first__cards-6-title">Mixes y Radio.</h2>
+                        <p class="first__cards-6-description">Consigue una selección personalizada de canciones y vídeos con My Mix, o descubre nueva música con Artist Radio.<p>
+                        <div class="first__cards-6-link">
                             <a href="#">Aprender más</a>
                         </div>div>
                     </div>
                 </div>
                 <div class="carrusel_tarjeta_7">
-                    <img class="img_carrusel_2" src="./img/img_carrusel_7.png">
-                    <div class="carrusel_texto_7">
-                        <h2 class="carrusel_titulo_7">Listas de reproducción seleccionadas.</h2>
-                        <p class="carrusel_descripcion_7">Echa un vistazo a las playlists originales hechas a mano por nuestro equipo de expertos o escucha playlists seleccionadas por los artistas que amas.<p>
+                    <img class="first__cards-7-img" src="./img/img_carrusel_7.png">
+                    <div class="first__cards-7-texts">
+                        <h2 class="first__cards-7-title">Listas de reproducción seleccionadas.</h2>
+                        <p class="first__cards-7-description">Echa un vistazo a las playlists originales hechas a mano por nuestro equipo de expertos o escucha playlists seleccionadas por los artistas que amas.<p>
                     </div>
                 </div>
                 <div class="carrusel_tarjeta_8">
-                    <img class="img_carrusel_8" src="./img/img_carrusel_8.png">
-                    <div class="carrusel_texto_8">
-                        <h2 class="carrusel_titulo_8">Videos y Livestreams.</h2>
-                        <p class="carrusel_descripcion_8">Disfruta de más de 650 000 videos de alta calidad, incluyendo videos musicales, contenido original, livestreams exclusivos y eventos.<p>
+                    <img class="first__cards-8-img" src="./img/img_carrusel_8.png">
+                    <div class="first__cards-8-texts">
+                        <h2 class="first__cards-8-title">Videos y Livestreams.</h2>
+                        <p class="first__cards-8-description">Disfruta de más de 650 000 videos de alta calidad, incluyendo videos musicales, contenido original, livestreams exclusivos y eventos.<p>
                     </div>
                 </div>
             </div>
         </article>
     </section>
-    <!--CARRUSEL CON VIDEO-GAMA-->
-    <section class="section__gama">
-        <article class="article__contenedor-gama">
-            <div class="contenedor__gama">
-                <div class="fondo_img-video">
-                    <img class="img__fondo-gama" src="./img/info.jpg">
-                    <video playsinline autoplay="autoplay" muted="muted" loop="loop" class="video_fondo-gama"src="./video/audio-grid.mp4">
+    <!--FIRST CARRUSEL 1-->
+
+    <!--SECTION QUALITY-->
+    <section class="section__quality">
+        <article class="quality__container-elements">
+            <div class="quality__elements">
+                <div class="quality__elements-img-vid">
+                    <img class="quality__elements-img" src="./img/info.jpg">
+                    <video playsinline autoplay="autoplay" muted="muted" loop="loop" class="quality__elements-vid"src="./video/audio-grid.mp4">
                     </video>
                 </div>
-                <div class="container__info-gama">
-                    <div class="container__titulo-gama">
-                        <h3 class="gama__title">Un sonido potente para cada ocasión</h3>
+                <div class="quality__elements-texts-carrusel">
+                    <div class="quality__elements-texts">
+                        <h3 class="quality__elements-texts-title">Un sonido potente para cada ocasión</h3>
                     </div>
-                    <div class="carrusel__segundo">
-                        <div class="carrusel_uno">
-                            <p class="gama__decription-title1">MAX</p>
-                            <p class="gama__decription-description">(Hasta 24 bit, 192 kHz)</p>
-                            <p class="gama__detalle-text">Disfruta de un audio inigualable que reproduce cada detalle con HiRes Free Lossless Audio Code (HiRes FLAC). La experiencia será mucho mejor con una conexión 5G o Wifi con conexión de hardware.</p>
+                    <div class="quality__elements-carrusel">
+                        <div class="quality__carrusel-texts-img">
+                            <p class="quality__carrusel-texts-title-1">MAX</p>
+                            <p class="quality__carrusel-texts-bit">(Hasta 24 bit, 192 kHz)</p>
+                            <p class="quality__carrusel-texts-detail">Disfruta de un audio inigualable que reproduce cada detalle con HiRes Free Lossless Audio Code (HiRes FLAC). La experiencia será mucho mejor con una conexión 5G o Wifi con conexión de hardware.</p>
                         </div>
-                        <div class="carrusel_uno">
-                            <p class="gama__decription-title2">Alta</p>
-                            <p class="gama__decription-description">(Hasta 16 bit, 44,1 kHz)</p>
-                            <p class="gama__detalle-text">Disfruta de más de 100 millones de canciones en calidad de estudio con FLAC. Gracias a su formato de código abierto, cada artista puede crear y ofrecer música de alta fidelidad de forma sencilla.</p>
+                        <div class="quality__carrusel-texts-img">
+                            <p class="quality__carrusel-texts-title-2">Alta</p>
+                            <p class="quality__carrusel-texts-bit">(Hasta 16 bit, 44,1 kHz)</p>
+                            <p class="quality__carrusel-texts-detail">Disfruta de más de 100 millones de canciones en calidad de estudio con FLAC. Gracias a su formato de código abierto, cada artista puede crear y ofrecer música de alta fidelidad de forma sencilla.</p>
                         </div>
-                        <div class="carrusel_uno">
-                            <div class="caja__titulo3">
-                                <p class="gama__decription-title3">Baja</p>
-                                <p class="gama__decription-description3">(Hasta 320 kbps)</p>
+                        <div class="quality__carrusel-texts-img">
+                            <div class="quality__carrusel-texts">
+                                <p class="quality__carrusel-texts-title-3">Baja</p>
+                                <p class="quality__carrusel-texts-bit-3">(Hasta 320 kbps)</p>
                             </div>
-                            <p class="gama__detalle-text">Disfruta de la música que te gusta mientras viajas sin preocuparte por los datos. Algo extremadamente útil cuando tienes mala cobertura de datos, se te están acabando o te estás quedando sin espacio para más descargas.</p>
+                            <p class="quality__carrusel-texts-detail">Disfruta de la música que te gusta mientras viajas sin preocuparte por los datos. Algo extremadamente útil cuando tienes mala cobertura de datos, se te están acabando o te estás quedando sin espacio para más descargas.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </article>
     </section>
+    <!--SECTION QUALITY-->
+
     <!--CARRUSEL CON scroll-->
-    <section>
+    <section class="section__notice-carrusel">
         <article class="cards">
             <div class="carrusel__tercero">
                 <div class="carrusel_dos" id="what-hifi-tab">
@@ -218,6 +226,8 @@
             </div>
         </article>
     </section>
+    <!--CARRUSEL CON scroll-->
+
     <!--TARJETA AZUL Y NARANJA-->
     <section>
         <article class="degrade">

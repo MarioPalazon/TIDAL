@@ -25,17 +25,17 @@ svg{
     padding: 12px 24px;
 }
 
-.header__container-iconos{
+.header__container-left{
     display: flex;
     align-items: center;
     color:white;
 }
 
-.header__titulo{
+.header__left-title{
     letter-spacing: 10px;
     margin-left: 10px;
 }
-.header__container-menu{
+.header__container-center{
     display: none;
 }
 
@@ -54,12 +54,12 @@ svg{
     justify-content: center;
 }
 
-.main__container-izquierdo{
+.main__container-left{
     text-align: center;
     padding: 0 24px;
 }
 
-.main__izquierdo-titulo{
+.main__left-title{
     font-family: "Poppins",sans-serif;
     line-height: 75px;
     margin-top: 45px;
@@ -67,14 +67,14 @@ svg{
     font-weight: 600;
 }
 
-.main__izquierdo-descripcion{
+.main__left-description{
     font-family: "Poppins",sans-serif;
     margin: 12px 0 24px 0;
     font-size: 15px;
     font-weight: 600;
 }
 
-.main__izquierdo-boton{    
+.main__container-btn{    
     width: 100%;
     background: white;
     padding: 10px 48px;
@@ -85,28 +85,28 @@ svg{
     background: gray;
 }
 
-.main__boton{
+.main__btn-link{
     font-family: "Poppins",sans-serif;
     text-decoration: none;
     color: black;
 }
 
-.main__container-derecho{
+.main__container-img{
     width: 100%;
 }
 
-.main__derecho-img{
+.main__img{
     width: 100%;
 }
 
 /*CARRUSEL*/
 
-.article_carrusel{
+.first__carrusel{
     background-color: black;
     padding: 70px 0;
 }
 
-.container_carrusel{
+.first__carrusel-container-cards{
     display: grid;
     grid-template-columns: repeat(8, 95%);
     width: 100%;
@@ -120,19 +120,19 @@ svg{
 
 /*TARJETA 1*/
 
-.carrusel_tarjeta_1{
+.first__carrusel-cards-1{
     scroll-snap-align: center; /*Indica que el punto de anclaje es el centro del elemento y el scroll no se detendrá entre las tarjetas*/
     position: relative;
     background: linear-gradient(180deg, transparent 38%, #000 80%);
 }
 
-.img_carrusel_1{
+.first__cards-1-img{
     width: 100%;    
     scroll-snap-align: center;
     border-radius: 10px;
 } 
 
-.carrusel_tarjeta_1::after{
+.first__carrusel-cards-1::after{
     content: "";
     position: absolute;
     top: 0;
@@ -142,7 +142,7 @@ svg{
     background: linear-gradient(180deg, transparent 38%, #000 80%);
 }
 
-.carrusel_texto_1{
+.first__cards-1-texts{
     position: absolute;
     height: 60%;
     bottom: 10px;
@@ -150,19 +150,19 @@ svg{
     z-index: 99;
 }
 
-.carrusel_titulo_1,
-.carrusel_titulo_2{
+.first__cards-1-title,
+.first__cards-2-title{
     color: #FFFFFF;
     margin-top: 65px;
     font-family: "Poppins", sans-serif;
     font-size: 19px;
 }
 
-.carrusel_descripcion_1,
-.carrusel_descripcion_2,
-.carrusel_descripcion_3,
-.carrusel_descripcion_4,
-.carrusel_descripcion_5{
+.first__cards-1-description,
+.first__cards-2-description,
+.first__cards-3-description,
+.first__cards-4-description,
+.first__cards-5-description{
     color: #FFFFFF;
     margin-top: 8px;
     line-height: 22px;
@@ -171,11 +171,11 @@ svg{
     font-family: "Poppins", sans-serif;
 }
 
-.carrusel_link_1 a,
-.carrusel_link_2 a,
-.carrusel_link_4 a,
-.carrusel_link_5 a,
-.carrusel_link_6 a{
+.first__cards-1-link a,
+.first__cards-2-link a,
+.first__cards-4-link a,
+.first__cards-5-link a,
+.first__cards-6-link a{
     position: absolute;
     bottom: 40px;
     color: #FFFFFF;
@@ -187,18 +187,18 @@ svg{
 }
 
 
-.carrusel_link_1 a::before,
-.carrusel_link_2 a::before,
-.carrusel_link_4 a::before,
-.carrusel_link_5 a::before,
-.carrusel_link_6 a::before{
+.first__cards-1-link a::before,
+.first__cards-2-link a::before,
+.first__cards-4-link a::before,
+.first__cards-5-link a::before,
+.first__cards-6-link a::before{
     content: url(../img/icons8-chebrón-hacia-la-derecha-20.png);
     align-items: center;
 }
 
 /*TARJETA 2*/
 
-.carrusel_tarjeta_2{
+.first__carrusel-cards-2{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -206,7 +206,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_tarjeta_2::after{
+.first__carrusel-cards-2::after{
     content: "";
     position: absolute;
     top: 0;
@@ -216,13 +216,17 @@ svg{
     background: linear-gradient(180deg, transparent 38.87%, #000 79.54%);
 }
 
-.img_carrusel_2{
+.first__cards-2-img,
+.first__cards-3-img,
+.first__cards-4-img,
+.first__cards-6-img,
+.first__cards-7-img{
     margin-top: 40px;
     width: 60%;
     scroll-snap-align: center;
 }
 
-.carrusel_texto_2{
+.first__cards-2-texts{
     position: absolute;
     height: 55%;
     bottom: 10px;
@@ -252,7 +256,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_texto_3{
+.first__cards-3-texts{
     position: absolute;
     height: 65%;
     bottom: 10px;
@@ -261,7 +265,7 @@ svg{
     z-index: 99;
 }
 
-.carrusel_titulo_3{
+.first__cards-3-title{
     width: 70%;
     color: #FFFFFF;
     margin: 25px 0 10px 0;
@@ -290,7 +294,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_texto_4{
+.first__cards-4-texts{
     position: absolute;
     height: 65%;
     bottom: 10px;
@@ -299,7 +303,7 @@ svg{
     z-index: 99;
 }
 
-.carrusel_titulo_4{
+.first__cards-4-title{
     width: 80%;
     color: #FFFFFF;
     margin: 60px 0 10px 0;
@@ -318,13 +322,13 @@ svg{
     border-radius: 10px;
 }
 
-.img_carrusel_5,
-.img_carrusel_8{
+.first__cards-5-img,
+.first__cards-8-img{
     width: 100%;
     margin-top: 30px;
 }
 
-.carrusel_texto_5{
+.first__cards-5-texts{
     position: absolute;
     height: 65%;
     bottom: 10px;
@@ -332,7 +336,7 @@ svg{
     padding: 0 21px;
 }
 
-.carrusel_titulo_5{
+.first__cards-5-title{
     color: #FFFFFF;
     margin: 90px 0 10px 0;
     font-family: "Poppins", sans-serif;
@@ -360,7 +364,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_texto_6{
+.first__cards-6-texts{
     position: absolute;
     height: 65%;
     bottom: 10px;
@@ -369,7 +373,7 @@ svg{
     z-index: 99;
 }
 
-.carrusel_titulo_6{
+.first__cards-6-title{
     color: #FFFFFF;
     margin: 90px 0 10px 0;
     padding-top: 20px;
@@ -377,7 +381,7 @@ svg{
     font-size: 19px;
 }
 
-.carrusel_descripcion_6{
+.first__cards-6-description{
     color: #FFFFFF;
     margin-top: 8px;
     line-height: 22px;
@@ -407,7 +411,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_texto_7{
+.first__cards-7-texts{
     position: absolute;
     height: 65%;
     bottom: 50px;
@@ -416,14 +420,14 @@ svg{
     z-index: 99;
 }
 
-.carrusel_titulo_7{
+.first__cards-7-title{
     color: #FFFFFF;
     margin: 90px 0 10px 0;
     font-family: "Poppins", sans-serif;
     font-size: 19px;
 }
 
-.carrusel_descripcion_7{
+.first__cards-7-description{
     color: #FFFFFF;
     margin-top: 8px;
     line-height: 22px;
@@ -443,7 +447,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_texto_8{
+.first__cards-8-texts{
     position: absolute;
     height: 65%;
     bottom: 50px;
@@ -451,7 +455,7 @@ svg{
     padding: 0 21px;
 }
 
-.carrusel_titulo_8{
+.first__cards-8-title{
     width: 80%;
     color: #FFFFFF;
     margin: 90px 0 10px 0;
@@ -460,7 +464,7 @@ svg{
     font-size: 19px;
 }
 
-.carrusel_descripcion_8{
+.first__cards-8-description{
     color: #FFFFFF;
     margin-top: 8px;
     line-height: 22px;
@@ -470,24 +474,24 @@ svg{
 }
 /*CARRUSEL*/
 
-.article__contenedor-gama{
+.quality__container-elements{
     padding-top: 50px;
     background-color: #000;
     position: relative;
     color: #FFFFFF;
 }
 
-.img__fondo-gama{
+.quality__elements-img{
     width: 100%;
     padding-top: 55px;
     padding-bottom: 100px;
 }
 
-.video_fondo-gama{
+.quality__elements-vid{
     display: none;
 }
 
-.container__titulo-gama{
+.quality__elements-texts{
     width: 80%;
     position: absolute;
     top: 0;
@@ -496,7 +500,7 @@ svg{
     padding: 0 25px;
 }
 
-.carrusel__segundo{
+.quality__elements-carrusel{
     display: grid;
     grid-template-columns: repeat(3, 100%);
     position: absolute;
@@ -510,12 +514,12 @@ svg{
     padding: 0 23px;
 }
 
-.carrusel_uno{
+.quality__carrusel-texts-img{
     scroll-snap-align: center;
 }
 
-.gama__decription-title1,
-.gama__decription-title2{
+.quality__carrusel-texts-title-1,
+.quality__carrusel-texts-title-2{
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -523,7 +527,7 @@ svg{
     align-items: center;
 }
 
-.gama__decription-title1::after{
+.quality__carrusel-texts-title-1::after{
     content: "Max";
     padding: 5px 8px;
     background-color: #332619;
@@ -534,7 +538,7 @@ svg{
     text-align: center;
 }
 
-.gama__decription-description{
+.quality__carrusel-texts-bit{
     color: white;
     font-family: "Poppins", sans-serif;
     margin: 0 0 0 8px;
@@ -543,13 +547,13 @@ svg{
     padding: 10px 0 20px;
 }
 
-.caja__titulo3{
+.quality__carrusel-texts{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.gama__decription-title3{
+.quality__carrusel-texts-title-3{
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -557,7 +561,7 @@ svg{
     align-items: center;
 }
 
-.gama__decription-description3{
+.quality__carrusel-texts-bit-3{
     color: white;
     font-family: "Poppins", sans-serif;
     margin: 0 0 0 8px;
@@ -565,7 +569,7 @@ svg{
     line-height: 10px;
 }
 
-.gama__detalle-text{
+.quality__carrusel-texts-detail{
     font-family: "Poppins", sans-serif;
     color:white;
     font-size: 18px;
@@ -573,7 +577,7 @@ svg{
     font-weight: 300;
 }
 
-.gama__decription-title2::after{
+.quality__carrusel-texts-title-2::after{
     content: "Alta";
     padding: 5px 8px;
     background-color: #07332f;
@@ -585,7 +589,7 @@ svg{
 }
 
 
-.gama__decription-title3::after{
+.quality__carrusel-texts-title-3::after{
     content: "Baja";
     padding: 5px 8px;
     background-color: #393940;
@@ -1191,7 +1195,7 @@ svg{
         text-align: left;
    } 
 
-   .main__container-izquierdo{
+   .main__container-left{
         display: flex;
         flex-direction: column;   
         padding-left: 48px;     
@@ -1199,38 +1203,38 @@ svg{
         width: 60%;
    }
 
-   .main__izquierdo-titulo{
+   .main__left-title{
         font-size: 65px;
         text-align: left;
         line-height: 90px;
         width: 60%;
    }
 
-   .main__container-derecho{
+   .main__container-img{
         position: absolute;
         top:0;
         right:0px;
         width: 60%;
    }
    
-   .main__izquierdo-boton{
+   .main__container-btn{
         width: 78%;
    }
 
-   .container_carrusel {
+   .first__carrusel-container-cards {
         grid-template-columns: repeat(8, 45%);
         gap: 17px;
         height: 100vh;
         padding: 0 60px;
    }
 
-   .container__titulo-gama {
+   .quality__elements-texts {
         width: 100%;
         font-size: 37px;
         padding: 0 45px;
    }
 
-   .carrusel__segundo {
+   .quality__elements-carrusel {
         display: grid;
         grid-template-columns: repeat(3, 29%);
         top: 50%;
@@ -1238,61 +1242,62 @@ svg{
         height: 100%;
     }    
 
-    .section__gama{
+    .section__quality{
         background-color: #000;
         padding: 60px 0px;
     }
 
-    .contenedor__gama{
+    .quality__elements{
         padding: 80px 0;
         margin-bottom: 80px;
     }
 
-    .fondo_img-video{
+    .quality__elements-img-vid{
         object-fit: cover;
     }
 
     
 
-    .img__fondo-gama{
+    .quality__elements-img{
         display: none;
     }
 
-    .video_fondo-gama{
+    .quality__elements-vid{
         display: flex;
         width: 100%;
         object-fit: cover;
     }
 
-    .gama__detalle-text {
+    .quality__carrusel-texts-detail {
         font-size: 14px;
         line-height: 25px;
         font-weight: 500;
    }
 
-   .gama__decription-title1, .gama__decription-title2,
-   .gama__decription-title3 {
+   .quality__carrusel-texts-title-1, 
+   .quality__carrusel-texts-title-2,
+   .quality__carrusel-texts-title-3 {
         font-size: 30px;
    }
 
-   .gama__decription-title1::after,
-   .gama__decription-title2::after,
-   .gama__decription-title3::after {
+   .quality__carrusel-texts-title-1::after,
+   .quality__carrusel-texts-title-2::after,
+   .quality__carrusel-texts-title-3::after {
         font-size: 15px;
         padding: 3px 15px;
         text-transform: uppercase;
    }
 
-   .caja__titulo3 {
+   .quality__carrusel-texts {
         flex-direction: column;
         align-items: start;
    }
 
-   .gama__decription-description3 {
+   .quality__carrusel-texts-bit-3 {
         padding: 10px 0 20px;
    }
 
-   .caja__titulo3 {
+   .quality__carrusel-texts {
     margin-bottom: 0;
 }
 
@@ -1389,21 +1394,21 @@ svg{
         width: 100%;
     }
 
-    .header__titulo {
+    .header__left-title {
         font-size: 25px;
         font-family: "Poppins", sans-serif;
     }
 
-    .header__container-iconos{
+    .header__container-left{
         width: 50%;
         margin-left: 40px;
     }
 
-    .header__container-iconos svg{
+    .header__container-left svg{
         width: 5%;
     }
 
-    .header__container-menu{
+    .header__container-center{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1412,7 +1417,7 @@ svg{
         margin-top: 20px;
     }
 
-    .header__container-menu button{
+    .header__container-center button{
         font-family: "Poppins", sans-serif;
         background: transparent;
         color:white;
@@ -1424,12 +1429,12 @@ svg{
        
     }
 
-    .header__container-menu button:hover{
+    .header__container-center button:hover{
         cursor: pointer;
         background: #696969;
     }
 
-    .header__container-menu a{
+    .header__container-center a{
         font-family: "Poppins", sans-serif;
         text-decoration: none;
         color:black;
@@ -1440,7 +1445,7 @@ svg{
         transition:  0.8s all;
     }
 
-    .header__container-menu a:hover{
+    .header__container-center a:hover{
         cursor: pointer;
         background: #c1c1c1;
     }
@@ -1449,7 +1454,7 @@ svg{
         padding-bottom: 90px;
     }
 
-    .main__container-izquierdo{
+    .main__container-left{
         text-align: left;
         width: 70%;
         padding-left: 60px;
@@ -1457,29 +1462,29 @@ svg{
         margin-left: 60px;
     }
 
-    .main__izquierdo-titulo{
+    .main__left-title{
         width: 70%;
         font-size: 110px;
         line-height: 125px;
         letter-spacing: 4px;
     }
 
-    .main__izquierdo-descripcion{
+    .main__left-description{
         padding: 17px 0;
         font-size: 17px;
     }
 
-    .main__izquierdo-boton{
+    .main__container-btn{
         width: 25%;
         display: flex;
         justify-content: center;
     }
 
-    .main__container-derecho{
+    .main__container-img{
         width: 57%;
     }
 
-    .container_carrusel {
+    .first__carrusel-container-cards {
         grid-template-columns: repeat(8, 31%);
         grid-template-rows: 100%;
         height: 100vh;
@@ -1489,64 +1494,67 @@ svg{
         scroll-snap-type: x mandatory;
     }
 
-    .carrusel_texto_1 {
+    .first__cards-1-texts {
         height: 45%;
     }
 
-    .carrusel_link_1 a, .carrusel_link_2 a, .carrusel_link_4 a, .carrusel_link_6 a{
+    .first__cards-1-link a, 
+    .first__cards-2-link a, 
+    .first__cards-4-link a, 
+    .first__cards-6-link a{
         display: flex;
         text-align: center;
         color: #FFFFFF;
         text-decoration: none;
     }
 
-    .carrusel_link_1 a::before,
-    .carrusel_link_2 a::before,
-    .carrusel_link_4 a::before,
-    .carrusel_link_5 a::before,
-    .carrusel_link_6 a::before{
+    .first__cards-1-link a::before,
+    .first__cards-2-link a::before,
+    .first__cards-4-link a::before,
+    .first__cards-5-link a::before,
+    .first__cards-6-link a::before{
         content: url(../img/icons8-chebrón-hacia-la-derecha-20.png);
         align-items: center;
     }
 
-    .img_carrusel_1{
+    .first__cards-1-img{
         width: 100%;
         object-fit: cover;
     }
 
-    .container__titulo-gama{
+    .quality__elements-texts{
         width: 70%;
     }
 
-    .section__gama {
+    .section__quality {
         width: 100%;
         display: flex;
         justify-content: center;
 
     }
 
-    .article__contenedor-gama {
+    .quality__container-elements {
         width: 90%;
         display: flex;
     
     }
 
-    .carrusel__segundo {
+    .quality__elements-carrusel {
         display: grid;
         grid-template-columns: repeat(3, 32%);
     }
 
-    .gama__title{
+    .quality__elements-texts-title{
         margin-top: 50px;
         font-size: 50px;
     }
 
-    .contenedor__gama{
+    .quality__elements{
         padding: 80px 0;
         margin-bottom: 80px;
     }
 
-    .carrusel__segundo{
+    .quality__elements-carrusel{
         height: 35%;
         overflow: hidden;
     }
