@@ -237,7 +237,7 @@ svg{
 
 /*TARJETA 3*/
 
-.carrusel_tarjeta_3{
+.first__carrusel-cards-3{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -245,7 +245,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_tarjeta_3::after{
+.first__carrusel-cards-3::after{
     content: "";
     position: absolute;
     top: 0;
@@ -275,7 +275,7 @@ svg{
 
 /*TARJETA 4*/
 
-.carrusel_tarjeta_4{
+.first__carrusel-cards-4{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -283,7 +283,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_tarjeta_4::after{
+.first__carrusel-cards-4::after{
     content: "";
     position: absolute;
     top: 0;
@@ -313,7 +313,7 @@ svg{
 
 /*TARJETA 5*/
 
-.carrusel_tarjeta_5{
+.first__carrusel-cards-5{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -345,7 +345,7 @@ svg{
 
 /*TARJETA 6*/
 
-.carrusel_tarjeta_6{
+.first__carrusel-cards-6{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -353,7 +353,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_tarjeta_6::after{
+.first__carrusel-cards-6::after{
     content: "";
     position: absolute;
     top: 0;
@@ -392,7 +392,7 @@ svg{
 
 /*TARJETA 7*/
 
-.carrusel_tarjeta_7{
+.first__carrusel-cards-7{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -400,7 +400,7 @@ svg{
     border-radius: 10px;
 }
 
-.carrusel_tarjeta_7::after{
+.first__carrusel-cards-7::after{
     content: "";
     position: absolute;
     top: 0;
@@ -438,7 +438,7 @@ svg{
 
 /*TARJETA 8*/
 
-.carrusel_tarjeta_8{
+.first__carrusel-cards-8{
     scroll-snap-align: center;
     position: relative;
     text-align: center;
@@ -1563,7 +1563,7 @@ svg{
     .first__cards-4-link a::before,
     .first__cards-5-link a::before,
     .first__cards-6-link a::before{
-        content: url(../img/icons8-chebrón-hacia-la-derecha-20.png);
+        content: url(../img/icons/icon_right_btn.png);
         align-items: center;
     }
 
