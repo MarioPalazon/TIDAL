@@ -713,7 +713,7 @@ svg{
 
 .degrade__caja-azul{
     margin-top: 50px;
-    background-color: #5CCEC8;
+    background: linear-gradient(.32deg, #1a8b85fa .2%, #60d4cefa 99.7%);
     padding: 36px 36px 24px 36px;
     border-radius: 10px;
 }
@@ -812,7 +812,7 @@ svg{
 
 .degrade__caja-naranja{
     margin-top: 50px;
-    background-color: #FFB972;
+    background: linear-gradient(180deg, #ffb972 2.6%, #eb720e);
     padding: 36px 36px 24px 36px;
     border-radius: 10px;
 }
@@ -1513,7 +1513,7 @@ svg{
         width: 57%;
     }
 
-    .first__carrusel-container-second__carrusel {
+    .first__carrusel-container-cards {
         grid-template-columns: repeat(8, 31%);
         grid-template-rows: 100%;
         height: 100vh;
