@@ -599,7 +599,7 @@ svg{
     text-align: center;
 }
 
-.cards{
+.second__carrusel{
     background: #09090A;
     padding: 72px 0;
     color: white;
@@ -608,7 +608,7 @@ svg{
     align-items: center;
 }
 
-.carrusel__tercero{
+.second__carrusel-container-cards{
     display: grid;
     grid-template-columns: repeat(4, 100%);    
     width: 100%;
@@ -620,77 +620,73 @@ svg{
     padding: 0 23px;
 }
 
-.cards__container-link-carrusel{
+.second__container-link-img{
     display: none;
 }
 
-.carrusel_dos{
+.second__carrusel-cards-2{
     scroll-snap-align: center;
 }
 
-.cards__text-title{
+.second__cards-2-texts-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 24px 10px;
     margin-bottom: 12px;
 }
 
-.text__title1,
-.text__title4{
+.second__cards-2-title-1,
+.second__cards-2-title-4{
     font-family: "Poppins", sans-serif;
     font-size: 19px;
     text-align: center;
     font-weight: bold;
 }
 
-.text__title2{
+.second__cards-2-title-2{
     font-family: "Poppins", sans-serif;
     font-size: 22px;
     text-align: center;
     font-weight: bold;
     line-height: 31px;
+    margin-bottom: 30px;
 }
 
-.text__title3{
+.second__cards-2-title-3{
     font-family: "Poppins", sans-serif;
     font-size: 23px;
     text-align: center;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 
-.cards__text-description{
+.second__cards-2-title-4{
+    margin-bottom: 40px;
+}
+
+.second__cards-2-description-1{
     margin-bottom: 24px;
-}
-
-.text__description{
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     text-align: center;
     
 }
 
-.text__description span{
+.second__cards-2-description-1 span{
     font-weight: bold;
 }
 
-.cards__text-img{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.cards__text-img-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
-.text__img,
-.text__img-1{
+.second__cards-2-img-1,
+.second__cards-2-img-2,
+.second__cards-2-img-3{
     width: 60%;
 }
 
 
-.text__img-especial{
+.second__cards-2-img-4{
     width: 20%;
 }
 
@@ -1299,25 +1295,55 @@ svg{
 
    .quality__carrusel-texts {
     margin-bottom: 0;
-}
-
-    .cards__text-img{
-        display: none;
     }
 
-    .text__img-1{
+    .second__cards-2-img-1{
         width: 20%;
     }
 
-    .carrusel__tercero{
-        
+    .second__carrusel-container-cards{
         height: 350px;
     }
 
-    .cards__container-link-carrusel{
+    .second__cards-2-img-2,
+    .second__cards-2-img-3,
+    .second__cards-2-img-4{
+        display: none;
+    }
+
+    .second__cards-2-title-1{
+        width: 95%;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .second__cards-2-description-1{
+        font-size: 15px;
+    }
+
+    .second__cards-2-title-2,
+    .second__cards-2-title-3{
+        width:90%;
+        font-size: 28px;
+        margin-bottom: 20px;
+        line-height: 50px;
+    }
+
+    .second__cards-2-title-4{
+        width:100%;
+        font-size: 22px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+
+    .second__container-link-img{
         padding: 0 48px 0 48px;
         display: flex;
+        justify-content: space-around;        
+    }
 
+    .second__link-img{
+        width: 60%;
     }
 
     .degrade__text-title{
@@ -1487,7 +1513,7 @@ svg{
         width: 57%;
     }
 
-    .first__carrusel-container-cards {
+    .first__carrusel-container-second__carrusel {
         grid-template-columns: repeat(8, 31%);
         grid-template-rows: 100%;
         height: 100vh;
@@ -1562,12 +1588,52 @@ svg{
         overflow: hidden;
     }
 
-    .cards__text-img{
+    .second__cards-2-img-2,
+    .second__cards-2-img-3,
+    .second__cards-2-img-4{
         display: none;
     }
     
-    .carrusel__tercero{        
+    .second__cards-2-title-1{
+        width: 74%;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .second__cards-2-description-1{
+        font-size: 18px;
+    }
+
+    .second__cards-2-img-1{
+        width: 12%;
+    }
+
+    .second__cards-2-title-2,
+    .second__cards-2-title-3{
+        width:80%;
+        font-size: 35px;
+        margin-bottom: 20px;
+        line-height: 50px;
+    }
+
+    .second__cards-2-title-4{
+        width:70%;
+        font-size: 25px;
+        margin-bottom: 20px;
+        line-height: 40px;
+    }
+
+    .second__carrusel-container-cards{        
         overflow: hidden;
+    }
+
+    .second__container-link-img{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .second__link-img{
+        width: 70%;
     }
 
     .degrade__text-title {
