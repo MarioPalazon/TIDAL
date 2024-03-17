@@ -17,6 +17,21 @@ svg{
     width: 10%;
 }
 
+.animacion_1{
+    animation-name: slideInUp;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-delay: 0s;
+}
+
+.animacion_2{
+    animation-name: slideInUp;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-delay: 0s;
+}
+
+
 /*HEADER*/
 .header{
     background: black;
@@ -192,7 +207,7 @@ svg{
 .first__cards-4-link a::before,
 .first__cards-5-link a::before,
 .first__cards-6-link a::before{
-    content: url(../img/icons8-chebrón-hacia-la-derecha-20.png);
+    content: url(../img/icons/icon_right_btn.png);
     align-items: center;
 }
 
@@ -1834,3 +1849,4 @@ svg{
 
 }
 /*FIN MEDIDAS DEL  LAPTOP*/
+
