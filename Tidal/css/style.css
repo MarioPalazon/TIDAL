@@ -14,7 +14,7 @@ img{
 }
 
 svg{
-    width: 10%;
+    width: 11%;
 }
 
 .animacion_1{
@@ -37,7 +37,7 @@ svg{
     background: black;
     display: flex;
     justify-content: space-between;
-    padding: 12px 24px;
+    padding: 22px 24px;
 }
 
 .header__container-left{
@@ -47,17 +47,21 @@ svg{
 }
 
 .header__left-title{
-    letter-spacing: 10px;
-    margin-left: 10px;
+    letter-spacing: 8px;
+    font-size: 19px;
+    margin-left: 11px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 3px;
 }
 .header__container-center{
     display: none;
 }
 
 .header__container-hamburguesa{
-    color:white;
-    font-size: 24px;
+    color: white;
+    font-size: 26px;
     margin-left: 12px;
+    padding-top: 3px;
 }
 
 .main{
@@ -77,14 +81,20 @@ svg{
 .main__left-title{
     font-family: "Poppins",sans-serif;
     line-height: 75px;
-    margin-top: 45px;
+    margin-top: 10px;
     font-size: 55px;
+    font-weight: 600;
+}
+
+.main__left-title span{
+    font-family: "Poppins",sans-serif;
+    font-size: 62px;
     font-weight: 600;
 }
 
 .main__left-description{
     font-family: "Poppins",sans-serif;
-    margin: 12px 0 24px 0;
+    margin: 12px 0 35px 0;
     font-size: 15px;
     font-weight: 600;
 }
@@ -92,7 +102,7 @@ svg{
 .main__container-btn{    
     width: 100%;
     background: white;
-    padding: 10px 48px;
+    padding: 13px 48px;
     border-radius: 10px;
 }
 
@@ -104,14 +114,20 @@ svg{
     font-family: "Poppins",sans-serif;
     text-decoration: none;
     color: black;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .main__container-img{
     width: 100%;
 }
 
-.main__img{
+.main__img-mobile{
     width: 100%;
+}
+
+.main__img-descktop{
+    display: none;
 }
 
 /*CARRUSEL*/
@@ -335,12 +351,15 @@ svg{
     border-radius: 10px;
     background: linear-gradient(180deg, #074cb4 38%, #024d6c 68%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
-.first__cards-5-img,
-.first__cards-8-img{
+.first__cards-5-img{
     width: 100%;
-    margin-top: 30px;
+    height: 143px;
+    margin-top: 126px;
+    position: absolute;
+    left: -52px;
 }
 
 .first__cards-5-texts{
@@ -460,6 +479,7 @@ svg{
     border-radius: 10px;
     background: linear-gradient(180deg, #430fb1 30%, #0e2883 68%);
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .first__cards-8-texts{
@@ -468,6 +488,13 @@ svg{
     bottom: 50px;
     text-align: left;
     padding: 0 21px;
+}
+
+.first__cards-8-img{
+    width: 138%;
+    margin-top: 30px;
+    position: absolute;
+    left: -50px;
 }
 
 .first__cards-8-title{
@@ -486,6 +513,10 @@ svg{
     font-weight: 300;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
+}
+
+.flechas{
+    display: none;
 }
 /*CARRUSEL*/
 
@@ -648,7 +679,7 @@ svg{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 24px 10px;
+    padding: 24px 0px;
     margin-bottom: 12px;
 }
 
@@ -658,6 +689,8 @@ svg{
     font-size: 19px;
     text-align: center;
     font-weight: bold;
+    padding: 0 10px;
+    margin: 39px 0;
 }
 
 .second__cards-2-title-2{
@@ -666,7 +699,7 @@ svg{
     text-align: center;
     font-weight: bold;
     line-height: 31px;
-    margin-bottom: 30px;
+    margin: 38px 10px;
 }
 
 .second__cards-2-title-3{
@@ -674,7 +707,7 @@ svg{
     font-size: 23px;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin: 0 10px;
 }
 
 .second__cards-2-title-4{
@@ -959,11 +992,29 @@ svg{
     padding: 0;
 }
 
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
 
 .little__carrusel-card-img{
     width: 100%;    
     scroll-snap-align: center;
-} 
+    view-timeline-name: --image;
+    view-timeline-axis: inline;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
 
 .faq{
     background: #141417;
@@ -1010,7 +1061,7 @@ svg{
 .list{
     /* font-family: "Poppins", sans-serif; */
     padding:48px 24px 0px 24px;
-    background: black;
+    background: #09090a;
     color: white;
     display: flex;
     flex-direction: column;
@@ -1024,10 +1075,12 @@ svg{
     color:#929992;
     font-size: 14px;
     margin-bottom: 25px;
+    font-family: "Poppins", sans-serif;
 }
 .list__texts-subtitle{    
     padding-left: 0px;
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }
 .list__texts-subtitle li{
     list-style: none;
@@ -1091,7 +1144,7 @@ svg{
 }
 
 .social__media{
-    background: black;
+    background: #09090a;
     padding: 0 10px;
     display: flex;
     flex-direction: column-reverse;    
@@ -1133,10 +1186,11 @@ svg{
 .social__media-texts-description{
     color:grey;
     font-size: 12px;
+    line-height: 25px;
 }
 
 .footer{
-    background: black;
+    background: #09090a;
     padding: 0 10px;
     display: flex;
     flex-direction: column-reverse;
@@ -1177,7 +1231,7 @@ svg{
 }
 
 .footer__right-btn{
-    background: black;
+    background: #09090a;
     padding: 10px 10px;
 }
 
@@ -1230,7 +1284,7 @@ svg{
    .main__container-left{
         display: flex;
         flex-direction: column;   
-        padding-left: 48px;     
+        padding: 13px 0px 0 49px;   
         z-index: 10;
         width: 60%;
    }
@@ -1242,23 +1296,63 @@ svg{
         width: 60%;
    }
 
+   .main__left-title span {
+        font-size: 75px;
+   }
+
+   .main__left-description{
+        text-align: left;
+        margin: 12px 0 26px 0;
+   }
+
    .main__container-img{
         position: absolute;
         top:0;
         right:0px;
         width: 60%;
    }
+
+   .main__img-mobile{
+        display: none;
+   }
+
+   .main__img-descktop{
+        display: flex;
+        width: 100%;
+   }
    
    .main__container-btn{
-        width: 78%;
+        width: 73%;
    }
 
    .first__carrusel-container-cards {
         grid-template-columns: repeat(8, 45%);
         gap: 17px;
-        height: 100vh;
+        height: 93vh;
         padding: 0 60px;
    }
+
+   .first__cards-3-texts {
+        height: 58%;
+   }
+
+   .first__cards-7-texts {
+        bottom: 34px;
+   }
+
+   .first__cards-8-texts {
+        bottom: 25px;
+   }
+
+   .first__cards-3-title,
+   .first__cards-4-title,
+   .first__cards-8-title {
+        width: 100%;
+   }
+
+   .flechas{
+        display: none;
+    }
 
    .quality__elements-texts {
         width: 100%;
@@ -1287,8 +1381,6 @@ svg{
     .quality__elements-img-vid{
         object-fit: cover;
     }
-
-    
 
     .quality__elements-img{
         display: none;
@@ -1359,10 +1451,10 @@ svg{
 
     .second__cards-2-title-2,
     .second__cards-2-title-3{
-        width:90%;
+        width: 87%;
         font-size: 28px;
         margin-bottom: 20px;
-        line-height: 50px;
+        line-height: 40px;
     }
 
     .second__cards-2-title-4{
@@ -1373,6 +1465,7 @@ svg{
     }
 
     .second__container-link-img{
+        width: 88%;
         padding: 0 48px 0 48px;
         display: flex;
         justify-content: space-around;        
@@ -1412,6 +1505,10 @@ svg{
         margin-top: 65px;
     }
 
+    .faq{
+        padding: 48px 45px;
+    }
+
     .faq__container-card{
         width: 100%;
         justify-content: space-between;
@@ -1420,17 +1517,23 @@ svg{
     }
 
     .faq__card{
-        width: 30%;
+        width: 27%;
+    }
+
+    .faq__card-title{
+        font-size: 22px;
     }
 
     .list{
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
     }
 
     .list__container{
-        width: 100%;
+        width: 94%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1440,9 +1543,36 @@ svg{
         width: 50%;
     }
 
-   .social__media-container-icons-link {
+    .section_social-media{
+        background: #09090a;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social__media{
+        width: 94%;
+    }
+
+    .social__media-container-icons-link {
         width: 40%;
-   }
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .footer__right{
+        width: 94%;
+    }
+
+    .footer__left{
+        width: 94%;
+        padding: 10px 10px 27px 10px;
+    }
+
     .footer__left-icons svg{
         width: 5%;
     }
@@ -1457,6 +1587,7 @@ svg{
     }
     .header{
         width: 100%;
+        padding: 16px 24px;
     }
 
     .header__left-title {
@@ -1467,6 +1598,7 @@ svg{
     .header__container-left{
         width: 50%;
         margin-left: 40px;
+        margin-top: 12px;
     }
 
     .header__container-left svg{
@@ -1477,16 +1609,16 @@ svg{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        width: 50%;
+        width: 45%;
         z-index: 10;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     .header__container-center button{
         font-family: "Poppins", sans-serif;
         background: transparent;
         color:white;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: bolder;
         border-radius: 5px;
         transition:  0.5s all;
@@ -1506,7 +1638,7 @@ svg{
         background-color: white;
         padding: 10px 30px;
         border-radius: 10px;
-        font-weight: bolder;
+        font-weight: 600;
         transition:  0.8s all;
     }
 
@@ -1523,8 +1655,8 @@ svg{
         text-align: left;
         width: 70%;
         padding-left: 60px;
-        padding-top: 80px;
-        margin-left: 60px;
+        padding-top: 100px;
+        margin: 20px 0 0 60px;
     }
 
     .main__left-title{
@@ -1532,6 +1664,10 @@ svg{
         font-size: 110px;
         line-height: 125px;
         letter-spacing: 4px;
+    }
+
+    .main__left-title span {
+        font-size: 117px;
     }
 
     .main__left-description{
@@ -1549,18 +1685,114 @@ svg{
         width: 57%;
     }
 
+
+    .first__carrusel{
+        padding: 70px 0px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .flechas{
+        position: absolute;
+        top: 41%;
+        height: 18%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 9;
+        padding: 0 35px;
+    }
+
+    .btn-scroll{
+        height: 100%;
+        width: 3%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-scroll-img{
+        width: 50%;
+    }
+
     .first__carrusel-container-cards {
-        grid-template-columns: repeat(8, 31%);
+        grid-template-columns: repeat(8, 32%);
         grid-template-rows: 100%;
-        height: 100vh;
+        height: 116vh;
         overflow: hidden;
         padding-top: 60px;
         margin-top: 60px;
+        padding-bottom: 30px;
         scroll-snap-type: x mandatory;
     }
 
+    .first__carrusel-cards-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .first__carrusel-cards-1:hover,
+    .first__carrusel-cards-2:hover,
+    .first__carrusel-cards-3:hover,
+    .first__carrusel-cards-4:hover,
+    .first__carrusel-cards-5:hover,
+    .first__carrusel-cards-6:hover,
+    .first__carrusel-cards-7:hover,
+    .first__carrusel-cards-8:hover{
+        box-shadow: 1px 1px 40px #3d3d3b;
+        transition: all 500ms ease-in-out;
+    }
+
     .first__cards-1-texts {
+        width: 87%;
         height: 45%;
+        padding: 0;
+    }
+
+    .first__cards-2-texts {
+        height: 45%;
+    }
+
+    .first__cards-3-texts {
+        height: 42%;
+        padding: 0px 31px;
+    }
+
+    .first__cards-4-texts {
+        height: 47%;
+        padding: 0 24px;
+    }
+
+    .first__cards-5-texts {
+        height: 48%;
+    }
+
+    .first__cards-6-texts {
+        height: 50%;
+    }
+
+    .first__cards-7-texts,
+    .first__cards-8-texts {
+        height: 46%;
+    }
+
+    .first__cards-3-title, 
+    .first__cards-4-title, 
+    .first__cards-8-title,
+    .first__cards-7-title {
+        width: 85%;
+    }
+    
+    .first__cards-1-description, 
+    .first__cards-2-description, 
+    .first__cards-3-description, 
+    .first__cards-4-description, 
+    .first__cards-5-description,
+    .first__cards-6-description,
+    .first__cards-7-description,
+    .first__cards-8-description {
+        font-size: 17px;
     }
 
     .first__cards-1-link a, 
@@ -1793,6 +2025,12 @@ svg{
 
     .list__container-link{
         width: 70%;
+        background-color: #09090a;
+        padding: 21px 0;
+    }
+
+    .list__container-link a {
+        font-family: "Poppins", sans-serif;
     }
 
     .list__img-desktop{
@@ -1801,16 +2039,17 @@ svg{
 
     .list__container-img-link{
         margin-top: 50px;
+        background-color: #09090a;
     }
 
     .social__media{
         flex-direction: row;    
-        width: 100%;
+        width: 91%;
     }
 
     .social__media-container-texts{
         width: 100%;
-        margin-left: 50px;
+        margin-left: 0;
     }
 
     .social__media-texts-description{
@@ -1826,7 +2065,7 @@ svg{
     .footer{
         width: 100%;
         flex-direction: row;
-;
+        padding-bottom: 30px;
     }
 
     .footer__left{
@@ -1838,9 +2077,10 @@ svg{
     }
 
     .footer__right{
-        width: 70%;
+        width: 68%;
         display: flex;
         flex-direction: row;
+        align-items: center;
     }
 
     .footer__right-list ul li{

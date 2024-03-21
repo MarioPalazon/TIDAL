@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/bootstrap-icons.min.css"><!--Libreria externa de iconos bootstrap-->
     <link rel="stylesheet" href="./css/animate.min.css"><!--Libreria externa para animacion-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icons/icons8-de-marea-30.png">
     <title>Tidal</title>
 </head>
 <body>
@@ -42,14 +43,15 @@
     <!--MAIN-->
     <main class="main">
         <div class="main__container-left animacion_1">
-            <h1 class="main__left-title">LIVE: donde esta la accion</h1>
-            <p class="main__left-description">Disfruta de la musica compartida en tiempo real</p>
+            <h1 class="main__left-title"><span>LIVE:</span> donde está la acción</h1>
+            <p class="main__left-description">Disfruta de la musica compartida en tiempo real.</p>
             <div class="main__container-btn">
                 <a href="https://login.tidal.com/authorize?client_id=bakYq0nMtpuRYDtM&flowInitiator=TIDAL&redirect_uri=https%3A%2F%2Foffer.tidal.com%2Flogin%2Ftidal%2Freturn&response_type=code&state=39af9a73-8e9e-40bf-8ef1-dce0b90ec77d&geo=CL&campaignId=default" class="main__btn-link">Prueba gratis</a>
             </div>
         </div>
         <div class="main__container-img animacion_2">
-            <img class="main__img" alt="imagen que corresponde al main" src="./img/main/img_main_6.png" />
+            <img class="main__img-mobile" alt="imagen que corresponde al main" src="./img/main/img_main_2.jpg" />
+            <img class="main__img-descktop" alt="imagen que corresponde al main" src="./img/main/img_main_6.png" />
        </div>
     </main>
     <!--MAIN-->
@@ -58,14 +60,14 @@
     <section class="section__first-carrusel">
         <article class="first__carrusel">
             <div class="first__carrusel-container-cards">
-                <div class="first__carrusel-cards-1">
+                <div class="first__carrusel-cards-1" id="click-i">
                     <img class="first__cards-1-img" src="./img/first-carrusel/first_carrusel_1.jpg">
                     <div class="first__cards-1-texts">
                         <h2 class="first__cards-1-title">El nuevo programa TIDAL RISING</h2>
                         <p class="first__cards-1-description">Descubre la próxima ola de nuevos artistas de TIDAL RISING de todo el mundo a través de una variedad de géneros.<p>
                         <div class="first__cards-1-link">
                             <a href="https://tidal.com/formusic">Aprender más</a>
-                        </div>div>                            
+                        </div>                          
                     </div>
                 </div>
                 <div class="first__carrusel-cards-2">
@@ -75,7 +77,7 @@
                         <p class="first__cards-2-description">Escucha o reproduce y comparte tus canciones y playlists favoritas en tiempo real con tus amigos, familiares u otros fans gracias a LIVE.<p>
                         <div class="first__cards-2-link">
                             <a href="https://tidal.com/liveontidal">Aprender más</a>
-                        </div>div>
+                        </div>
                     </div>
                 </div>
                 <div class="first__carrusel-cards-3">
@@ -85,14 +87,14 @@
                         <p class="first__cards-3-description">Con más de 100 millones de canciones, lanzamientos exclusivos y muchísimas entrevistas y videos musicales, TIDAL te acerca a los artistas que escuchas. Sin publicidad.<p>
                     </div>
                 </div>
-                <div class="first__carrusel-cards-4">
+                <div class="first__carrusel-cards-4" >
                     <img class="first__cards-4-img" src="./img/first-carrusel/first_carrusel_4.png">
                     <div class="first__cards-4-texts">
                         <h2 class="first__cards-4-title">Escucha más y mejor tu música favorita.</h2>
                         <p class="first__cards-4-description">Experimenta el mejor sonido de su clase con HiRes FLAC, 100 millones de canciones en calidad de estudio con FLAC o deja que el sonido te envuelva con Dolby Atmos y Sony 360 Reality Audio.<p>
                         <div class="first__cards-4-link">
                             <a href="https://tidal.com/sound-quality">Aprender más</a>
-                        </div>div>
+                        </div>
                     </div>
                 </div>
                 <div class="first__carrusel-cards-5">
@@ -102,7 +104,7 @@
                         <p class="first__cards-5-description">Escuche cuando sea en cualquier dispositivo, aunque esté sin conexión, en casa o en el automóvil.<p>
                         <div class="first__cards-5-link">
                             <a href="https://tidal.com/supported-devices">Ver nuestros dispositivos compatibless</a>
-                        </div>div>
+                        </div>
                     </div>
                 </div>
                 <div class="first__carrusel-cards-6">
@@ -112,7 +114,7 @@
                         <p class="first__cards-6-description">Consigue una selección personalizada de canciones y vídeos con My Mix, o descubre nueva música con Artist Radio.<p>
                         <div class="first__cards-6-link">
                             <a href="https://tidal.com/mymix">Aprender más</a>
-                        </div>div>
+                        </div>
                     </div>
                 </div>
                 <div class="first__carrusel-cards-7">
@@ -122,13 +124,22 @@
                         <p class="first__cards-7-description">Echa un vistazo a las playlists originales hechas a mano por nuestro equipo de expertos o escucha playlists seleccionadas por los artistas que amas.<p>
                     </div>
                 </div>
-                <div class="first__carrusel-cards-8">
+                <div class="first__carrusel-cards-8" id="click-d">
                     <img class="first__cards-8-img" src="./img/first-carrusel/first_carrusel_8.png">
                     <div class="first__cards-8-texts">
                         <h2 class="first__cards-8-title">Videos y Livestreams.</h2>
                         <p class="first__cards-8-description">Disfruta de más de 650 000 videos de alta calidad, incluyendo videos musicales, contenido original, livestreams exclusivos y eventos.<p>
                     </div>
                 </div>
+            </div>
+            <div class="flechas">
+                <a class="btn-scroll" href="#click-i">
+                    <img class="btn-scroll-img" src="./img/icons/icons8-galón-izquierdo-20.png">
+                </a>
+                <a class="btn-scroll" href="#click-d">
+                        <img class="btn-scroll-img" src="./img/icons/icon_right_btn.png">
+                    </a>
+                </a>
             </div>
         </article>
     </section>
@@ -138,10 +149,10 @@
     <section class="section__quality">
         <article class="quality__container-elements">
             <div class="quality__elements">
+                <video playsinline autoplay="autoplay" muted="muted" loop="loop" class="quality__elements-vid"src="./video/quality.mp4">
+                </video>
                 <div class="quality__elements-img-vid">
                     <img class="quality__elements-img" src="./img/quality/quality.jpg">
-                    <video playsinline autoplay="autoplay" muted="muted" loop="loop" class="quality__elements-vid"src="./video/quality.mp4">
-                    </video>
                 </div>
                 <div class="quality__elements-texts-carrusel">
                     <div class="quality__elements-texts">
