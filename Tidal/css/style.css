@@ -1129,7 +1129,6 @@ svg{
     background: black;
     color:aqua;
     border:1px solid aqua;
-    font-weight: bolder;
     padding: 10px;
     width: 50%;
     border-radius: 5px;
@@ -2028,6 +2027,12 @@ svg{
         width: 68%;
         background-color: #09090a;
         padding: 15px 0;
+    }
+
+    .list__container-link:hover{
+        transition: 1s all;
+        background:#073A3B;
+        cursor: pointer;
     }
 
     .list__container-link a {
