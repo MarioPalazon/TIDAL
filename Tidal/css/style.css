@@ -2030,7 +2030,7 @@ svg{
     }
 
     .list__container-link:hover{
-        transition: 1s all;
+        transition: 0.3s all;
         background:#073A3B;
         cursor: pointer;
     }
