@@ -1129,6 +1129,7 @@ svg{
     background: black;
     color:aqua;
     border:1px solid aqua;
+    font-weight: bolder;
     padding: 10px;
     width: 50%;
     border-radius: 5px;
@@ -2024,13 +2025,14 @@ svg{
     }
 
     .list__container-link{
-        width: 70%;
+        width: 68%;
         background-color: #09090a;
-        padding: 21px 0;
+        padding: 15px 0;
     }
 
     .list__container-link a {
         font-family: "Poppins", sans-serif;
+        font-weight: bolder;
     }
 
     .list__img-desktop{
