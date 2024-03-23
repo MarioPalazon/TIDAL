@@ -1679,6 +1679,12 @@ svg{
         width: 25%;
         display: flex;
         justify-content: center;
+        transition: .5s;
+    }
+    
+    .main__container-btn:hover{
+        cursor: pointer;
+        background: #c1c1c1;
     }
 
     .main__container-img{
@@ -1742,6 +1748,7 @@ svg{
     .first__carrusel-cards-8:hover{
         box-shadow: 1px 1px 40px #3d3d3b;
         transition: all 500ms ease-in-out;
+        cursor: pointer;
     }
 
     .first__cards-1-texts {
@@ -1856,6 +1863,11 @@ svg{
         overflow: hidden;
     }
 
+    .quality__elements-vid{
+        opacity: 0.3;
+        top:0;
+    }
+    
     .second__cards-2-img-2,
     .second__cards-2-img-3,
     .second__cards-2-img-4{
@@ -1902,8 +1914,14 @@ svg{
 
     .second__link-img{
         width: 70%;
+        opacity: 0.4;
     }
 
+    .second__link-img:hover{
+        opacity: 1;
+        transition: .8s all;
+    }
+    
     .colours__cards-title {
         font-size: 50px;
         padding-top: 40px;
@@ -2096,4 +2114,3 @@ svg{
 
 }
 /*FIN MEDIDAS DEL  LAPTOP*/
-
