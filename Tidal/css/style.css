@@ -53,6 +53,7 @@ svg{
     font-family: "Poppins", sans-serif;
     padding-top: 3px;
 }
+
 .header__container-center{
     display: none;
 }
@@ -792,7 +793,7 @@ svg{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
-    max-height: 362px;
+    max-height: 420px;
 }
 
 .colours__blue-subcard-general{
@@ -805,14 +806,16 @@ svg{
 
 .colours__blue-subcard-title{
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
+    color:#134744;
 }
 
 .colours__orange-subcard-title{
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
+    color:#4D180C;
 }
 
 .colours__blue-subcard-bit{
@@ -828,13 +831,13 @@ svg{
 .colours__blue-subcard-play{
     font-family: "Poppins", sans-serif;
     margin-top: 4.8px;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .colours__orange-subcard-play{
     font-family: "Poppins", sans-serif;
     margin-top: 4.8px;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .colours__cards-blue-btn{
@@ -919,7 +922,7 @@ svg{
     background-color: #FFD79C;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    max-height: 436px;
+    max-height: 520px;
     overflow: hidden;
 }
 
@@ -1524,6 +1527,13 @@ svg{
         font-weight: bolder;
     }
 
+    .colours__cards-blue-subcard{
+        max-height: 350px;
+    }
+    .colours__cards-orange-subcard{
+        max-height: 410px;
+    }
+
     .faq{
         padding: 48px 45px;
     }
@@ -1935,6 +1945,10 @@ svg{
         opacity: 1;
         transition: .8s all;
     }
+
+    .colours__cards-blue-subcard{
+        max-height: 400px;
+    }
     
     .colours__cards-title {
         font-size: 50px;
@@ -1950,9 +1964,8 @@ svg{
         margin-top: 20px;
     }
 
-
     .colours__blue-texts-btn-link{
-        margin-top: 125px;
+        margin-top: 105px;
     }
 
     .colours__orange-texts-btn-link{
@@ -1980,9 +1993,29 @@ svg{
         margin:0 80px;
     }
 
+    .colours__blue-subcard-title{
+        font-size: 18px;
+    }
+    
+    .colours__cards-orange-subcard{
+        max-height: 455px;
+    }
+    
+    .colours__orange-subcard-title{
+        font-size: 18px;
+    }
+
     .colours__cards-suscriptions-details{
         font-size: 17px;
         text-align: center;
+    }
+
+    .colours__blue-subcard-play{
+        font-size: 13px;
+    }
+    
+    .colours__orange-subcard-play{
+        font-size: 13px;
     }
 
     .little__carrusel-cards{
