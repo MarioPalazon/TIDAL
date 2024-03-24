@@ -793,7 +793,7 @@ svg{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
-    max-height: 420px;
+    max-height: 27rem;
 }
 
 .colours__blue-subcard-general{
@@ -922,7 +922,7 @@ svg{
     background-color: #FFD79C;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    max-height: 520px;
+    max-height: 33rem;
     overflow: hidden;
 }
 
@@ -1297,7 +1297,33 @@ svg{
     margin-left: 10px;
     color:#808080;
 }
+
+@media(min-width:375px) {
+
+    .colours__cards-blue-subcard{
+        max-height: 22rem;
+
+    }
+    .colours__cards-orange-subcard{
+        max-height: 26rem;
+
+    }
+}
+
+@media(min-width:425px) {
+
+    .colours__cards-blue-subcard{
+        max-height: 20rem;
+
+    }
+    .colours__cards-orange-subcard{
+        max-height: 23rem;
+
+    }
+}
 /*FIN MEDIDAS DEL MOBILE*/
+
+
 
 /*INICIO MEDIDAS DEL  TABLET*/
 @media(min-width:768px){
