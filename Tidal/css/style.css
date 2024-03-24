@@ -515,7 +515,7 @@ svg{
     font-family: "Poppins", sans-serif;
 }
 
-.flechas{
+.arrows{
     display: none;
 }
 /*CARRUSEL*/
@@ -764,6 +764,7 @@ svg{
     background: linear-gradient(.32deg, #1a8b85fa .2%, #60d4cefa 99.7%);
     padding: 36px 36px 24px 36px;
     border-radius: 10px;
+
 }
 
 .colours__cards-blue-title{
@@ -780,10 +781,13 @@ svg{
 }
 
 .colours__cards-blue-subcard{
+    transition: height 0.3s ease; /* Transición suave para el cambio de altura */
     padding: 24px 24px 24px 0;
     background-color: #89D4D0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    overflow: hidden;
+    max-height: 362px;
 }
 
 .colours__blue-subcard-general{
@@ -796,13 +800,13 @@ svg{
 
 .colours__blue-subcard-title{
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
 .colours__orange-subcard-title{
     font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -819,13 +823,13 @@ svg{
 .colours__blue-subcard-play{
     font-family: "Poppins", sans-serif;
     margin-top: 4.8px;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .colours__orange-subcard-play{
     font-family: "Poppins", sans-serif;
     margin-top: 4.8px;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .colours__cards-blue-btn{
@@ -904,6 +908,8 @@ svg{
     background-color: #FFD79C;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    max-height: 436px;
+    overflow: hidden;
 }
 
 .colours__cards-orange-btn{
@@ -1350,7 +1356,7 @@ svg{
         width: 100%;
    }
 
-   .flechas{
+   .arrows{
         display: none;
     }
 
@@ -1499,10 +1505,6 @@ svg{
     .colours__cards-blue-subtitle,
     .colours__cards-orange-subtitle{
         font-weight: bolder;
-    }
-
-    .degrade__caja-azul-valores{
-        margin-top: 65px;
     }
 
     .faq{
@@ -1698,7 +1700,7 @@ svg{
         z-index: 1;
     }
 
-    .flechas{
+    .arrows{
         position: absolute;
         top: 41%;
         height: 18%;
@@ -1927,7 +1929,7 @@ svg{
         padding-top: 40px;
         margin-top: 70px;
     }
-
+    
     .colours__cards-blue-orange {
         width: 100%;
         display: flex;
@@ -1936,8 +1938,9 @@ svg{
         margin-top: 20px;
     }
 
+
     .colours__blue-texts-btn-link{
-        margin-top: 100px;
+        margin-top: 125px;
     }
 
     .colours__orange-texts-btn-link{
@@ -1950,13 +1953,20 @@ svg{
         margin-left: 25px;
         border-radius: 25px;
         width: 30%;
+        opacity: 0.91;
+        transition: .8s all;
     }
-
+    .colours__cards-orange:hover,
+    .colours__cards-blue:hover{
+        opacity: 1;            
+    }
+    
     .colours__cards-blue-btn:hover{
         transition: 1s all;
         cursor: pointer;
-        background-color: #FFFFFF;
+        background-color: #FFFFFF;   
     }
+
 
     .colours__cards-orange-btn:hover{
         transition: 1s all;
@@ -1964,8 +1974,41 @@ svg{
         background-color: #FFFFFF;
     }
 
+    .colours__cards-suscriptions{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin:0 80px;
+    }
+
+    .colours__cards-suscriptions-details{
+        font-size: 17px;
+        text-align: center;
+    }
+
     .little__carrusel-cards{
+        top: 50%;
         overflow: hidden;
+        height: 170px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .little__carrusel-cards-card{
+        display: flex;
+        scroll-snap-type: x mandatory;
+    }
+
+    @keyframes scroll {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-200%); /* Ajusta según el número de slides */
+        }
+      }
+
+    .little__carrusel-card-img{
+        animation: scroll .8s ease-in-out forwards; /* Ajusta la duración del scroll */
     }
 
     .faq {
@@ -2015,10 +2058,6 @@ svg{
 
     .list__img-desktop svg {
         width: 100%;
-    }
-
-    .degrade__caja-azul-valores{
-        margin-top: 50px;
     }
 
     .list{
